@@ -72,7 +72,13 @@ Window OS :
 1-Desktop/Client : win 8  win 10   win11 
 2-Servers    : win server 2008   win server 2012  win server 2016   win server2019 
 ===========================================================================================
+Software installation link :
 
+VMware --->
+https://www.vmware.com/go/getworkstation-win
+
+Win 2022 -->
+https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US
 
 
 
