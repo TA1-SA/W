@@ -1,0 +1,123 @@
+Tools for system admin:
+
+	-Networking tools: 
+	 -ping :---> test connections between machines [no installation need]
+	 -nslookup---> to know the ip of machine name [no installation need]
+         -tracert ---> tracing the connection to destination [no installation need]
+         -netstat ---> check the opened ports [no installation need]
+         -ipconfig ---> know your ip address 
+
+eg: 
+
+ping 192.168.200.31
+nslookup google.com
+tracert google.com
+netstat 
+ipconfig 
+--------------------------------------------------------------------------------------
+Networking Basics : 
+					1st.2nd.3th.4th
+ipv4 address  ---->  4 octets   eg : >> 192.168.200.31
+
+
+[1st octet] Range :----> 1-223    ---> CLASS A :-> 1-126   Class B :-> 128-191  Class C :->192-223 
+[2nd,3th,4th octets] Range :->  0-255   [sometimes it could be 1-254] 
+
+C:>ping 192.168.8.11
+
+Pinging 192.168.8.11 with 32 bytes of data:
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.8.11:
+    Packets: Sent = 2, Received = 0, Lost = 2 (100% loss),
+
+How to solve this problem 
+
+1-check the pc if its up  [checked]  [ no problem]
+2-check if the cable is connected [checked]  [no problem] 
+3- check if the firewall blocks  [we turned off and check ]ping 192.168.8.11
+
+Pinging 192.168.8.11 with 32 bytes of data:
+Reply from 192.168.8.11: bytes=32 time=1ms TTL=128
+Reply from 192.168.8.11: bytes=32 time=1ms TTL=128
+Reply from 192.168.8.11: bytes=32 time=1ms TTL=128
+Reply from 192.168.8.11: bytes=32 time=1ms TTL=128
+
+		Ping statistics for 192.168.8.11:
+		    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+			Approximate round trip times in milli-seconds:
+  			  Minimum = 1ms, Maximum = 1ms, Average = 1ms 
+
+
+now it works after turnnig down the firewall 
+how to solve is :
+ adding file and printing service ICMPV4 protocol 
+
+Eg : --->  pc1 192.168.256.10  ---> valid? is not valid 3th is 256 which is out of range 
+   
+
+:--> pc1 : 192.168.200.31/24   pc2 : 192.168.201.31/24   is there any direct connection ?           
+
+   NO, cause its a different network   : pc1 : 192.168.200.0/24   pc2: 192.168.201.0/24 
+   Not the SAME NETWORK ID 
+==========================================================================================
+Virtualization : using a virtual resources to create many machine on one server/pc 
+
+hypervisor : 
+1-vmware [VCP] 
+2-micorosft [hyper-v]
+==========================================================================================
+Window OS :
+1-Desktop/Client : win 8  win 10   win11 
+2-Servers    : win server 2008   win server 2012  win server 2016   win server2019 
+===========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
